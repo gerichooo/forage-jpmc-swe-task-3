@@ -9,6 +9,7 @@ interface IState {
 }
 
 class App extends Component<{}, IState> {
+  state: { data: never[]; showGraph: boolean; };
   constructor(props: {}) {
     super(props);
     this.state = {
